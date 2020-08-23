@@ -1,0 +1,15 @@
+{
+  "name": "navbar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://raufal-hassan.github.io/restaurant.github.io/",
+  "scripts": {
+    "deploy": ""
+  },
+  "keywords": [],
+  "author": "Abdul Rauf Alh-hassan",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}

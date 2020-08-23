@@ -1,0 +1,11 @@
+.showcase .showcase-content {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 5rem;
+}
+
+.showcase article {
+  flex: 22rem;
+  height: 25rem;
+  margin: 1rem;
+}

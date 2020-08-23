@@ -1,0 +1,147 @@
+header {
+  background: #333 url("https://source.unsplash.com/nBtmglfY0HU/1600x900")
+    no-repeat center/cover;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+header .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+header nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+header nav .container .navbar-brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+header nav .container ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav .container ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  color: #f4f4f4;
+}
+
+header nav .container ul li a:hover {
+  background: rgb(109, 37, 202) !important;
+  color: #fff;
+}
+
+header .hero {
+  height: calc(100vh - 6.7rem);
+  display: flex;
+  text-align: left;
+  margin-top: 10rem;
+  width: 100vw;
+  text-shadow: 0.4rem 0.8rem 1rem #111;
+}
+
+header .hero .container .hero-content {
+  width: 80%;
+  line-height: 1.9;
+}
+
+header .hero .container .hero-content h1 {
+  font-size: 5rem;
+}
+
+header .hero .container .hero-content p {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 60rem) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .active {
+    background: inherit !important;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: rgba(255, 255, 255, 1);
+    color: #111;
+    transition: height 200ms ease-in-out;
+    height: 3.9rem;
+    overflow: hidden;
+    z-index: 12;
+  }
+
+  .nav-transition {
+    height: 50vh;
+    background: #fff;
+  }
+
+  header nav .container {
+    flex-direction: column;
+    justify-content: stretch;
+    align-content: stretch;
+    padding: 0;
+  }
+
+  header nav .container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  header nav .container div .navbar-brand {
+    color: #111;
+    font-size: 2.3rem;
+  }
+
+  header nav .container ul {
+    flex-direction: column;
+  }
+
+  header nav .container ul li a {
+    color: #111;
+  }
+
+  header .hero {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 0rem;
+  }
+
+  header .hero .container .hero-content {
+    width: 100%;
+    line-height: 1.7;
+  }
+}
